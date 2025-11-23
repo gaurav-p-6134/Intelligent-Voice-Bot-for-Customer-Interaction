@@ -9,7 +9,7 @@ from playsound import playsound
 
 # --- CONFIGURATION ---
 # PASTE YOUR GOOGLE GEMINI KEY HERE
-GOOGLE_API_KEY = "AIzaSyA9ticU8cHZ_Q72Slag_WrWDIiK-ZXUa2g"
+GOOGLE_API_KEY = "your api key"
 
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('models/gemini-2.0-flash')
@@ -112,4 +112,5 @@ def main():
             log_interaction(user_text, bot_reply, latency)
 
 if __name__ == "__main__":
+
     main()
